@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Basic Calculator</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+    <script>
+        const operator = prompt("Please enter an operator\nE.g +, -, *, /, %: ");
+        const number1 = prompt("Enter your First Number:");
+        const number2 = prompt("Enter your Second Number:");
+
+        if (operator === "+") {
+            var sum = parseInt(number1) + parseInt(number2);
+            alert("Your result is: " + sum);
+        } 
+        
+        if (operator === "-") {
+            var subtraction = number1 - number2;
+            alert("Your result is " + subtraction);
+        } 
+        
+        if (operator === "*") {
+            var multiply = number1 * number2;
+            alert("Your result is " + multiply);
+        } 
+        
+        if (operator === "/") {
+            var division = number1 / number2;
+            alert("Your result is " + division);
+        } 
+        
+        if (operator === "%") {
+            var modulo = number1 % number2;
+            alert("Your result is " + modulo);
+        } 
+        
+    </script>
+ </body>
+</html>
